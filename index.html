@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Todo App</h1>
+      <button id="themeBtn">🌙 Dark Mode</button> <br />
+
+      <div class="task-form">
+        <input type="text" id="taskInput" placeholder="Enter task" />
+        <select id="priorityInput">
+          <option value="" selected disabled>--Select Priority--</option>
+          <option value="high">high</option>
+          <option value="medium">medium</option>
+          <option value="low">low</option>
+        </select>
+        <input type="date" id="dueDateInput" />
+        <button id="addBtn">Add Task</button>
+      </div>
+
+      <button id="deleteAllBtn">Delete All</button>
+
+      <p id="taskStats"></p>
+      <input type="text" id="searchInput" placeholder="Search tasks" />
+
+      <div class="filterBtns">
+        <button id="allTask">All Task</button>
+        <button id="completedTask">Completed</button>
+        <button id="pendingTask">Pending</button>
+      </div>
+
+      <ul id="todoList"></ul>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

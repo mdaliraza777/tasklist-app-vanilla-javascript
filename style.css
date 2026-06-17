@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 25px;
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.hide {
+  display: none;
+}
+button {
+  margin: 2px;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+.dark-mode .todo-card {
+  background: #1e1e1e;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+input,
+select,
+button {
+  padding: 10px;
+  margin: 5px;
+  font-size: 16px;
+  border-radius: 6px;
+}
+
+.task-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px 0;
+}
+
+.filterBtns {
+  margin: 10px 0px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+#taskStats {
+  font-size: 18px;
+  margin: 15px 0;
+  font-weight: bold;
+}
+
+.todo-card {
+  background: #1f1f1f;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 12px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-info {
+  text-align: left;
+  line-height: 1.8;
+}
+.task-info strong {
+  font-size: 25px;
+}
+.task-info small {
+  color: #b0b0b0;
+}
+/* for actions buttons */
+.task-actions {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  cursor: pointer;
+  transition: 0.2s;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+}
+
+.delete-btn {
+  background: #ff4d4d;
+  color: white;
+}
+
+.complete-btn {
+  background: #28a745;
+  color: white;
+}
+
+.edit-btn {
+  background: #007bff;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.85;
+  transform: translateY(-2px);
+}
+
+.todo-card button {
+  margin-left: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+#searchInput {
+  width: 400px;
+  max-width: 90%;
+}
+#deleteAllBtn {
+  background: crimson;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .task-form {
+    flex-direction: column;
+  }
+
+  .todo-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .task-actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
