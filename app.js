@@ -1,17 +1,3 @@
-// 1. Add Task ✅
-// 2. Edit Task ✅
-// 3.Delete Task ✅
-// 4.Delete All ✅
-// 5.Complete Task ✅
-// 6.Task Statistics(total completed and pending Tasks) ✅
-// 7.Local Storage ✅
-// 8.Enter Key Support(By presssing "Enter key" user can enter the task) ✅
-// 9.Filter Tasks ✅
-// 10.Search Tasks ✅
-// 11. Dark mode and light mode ✅
-// 12. Priority Levels(low, high, medium) ✅
-// 13. Due Date ✅
-
 const taskInput = document.getElementById("taskInput");
 const addBtn = document.getElementById("addBtn");
 const todoList = document.getElementById("todoList");
