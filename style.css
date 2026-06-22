@@ -15,9 +15,8 @@ body {
 
 .container {
   max-width: 900px;
-  margin: 20px auto;
+  margin: 0px auto;
   padding: 25px;
-  background-color: #1e1e1e;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
@@ -41,6 +40,7 @@ button {
 h1 {
   text-align: center;
   margin-bottom: 15px;
+  font-size: 40px;
 }
 
 input,
@@ -75,7 +75,6 @@ button {
 }
 
 .todo-card {
-  background: #1f1f1f;
   border-radius: 10px;
   padding: 15px;
   margin-bottom: 12px;
@@ -83,6 +82,7 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border: 1px solid grey;
 }
 
 .task-info {
@@ -92,9 +92,7 @@ button {
 .task-info strong {
   font-size: 25px;
 }
-.task-info small {
-  color: #b0b0b0;
-}
+
 /* for actions buttons */
 .task-actions {
   display: flex;
@@ -162,5 +160,18 @@ button:hover {
   .task-actions {
     width: 100%;
     justify-content: space-between;
+  }
+}
+
+@media (max-width: 400px){
+  .task-actions{
+    display: flex;
+    flex-direction: column;
+  }
+  .filterBtns{
+    gap: 0px;
+  }
+  .filterBtns button{
+    padding: 2px 5px;
   }
 }
