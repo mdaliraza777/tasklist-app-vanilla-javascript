@@ -68,6 +68,10 @@ button {
   margin: 15px 0;
 }
 
+.filterBtns button{
+  border: 1px solid black;
+}
+
 #taskStats {
   font-size: 18px;
   margin: 15px 0;
